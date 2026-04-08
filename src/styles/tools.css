@@ -1,0 +1,195 @@
+.tools-section{
+  padding: 80px; 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-color: #F1F5F9;
+}
+
+.tools-section1{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.blob {
+  position: absolute;
+  z-index: 0;  
+}
+
+.blob-left {
+  bottom: 350px;
+  left: 60px;      
+  width: 500px;     
+}
+
+.blob-right {
+  right: -10px;    
+  width: 350px; 
+  bottom: 300px;    
+}
+
+.tools-section > *:not(.blob) {
+  position: relative;
+  z-index: 1;
+}
+
+.tools-header{
+  gap: 32px;
+}
+
+.tools-header h1{
+  font-size: 56px;
+  font-weight: 800;
+  font-style: extra-bold;
+  line-height: 110%;
+  color: #0F172A;
+}   
+
+.tools-header p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.tools-icons-head{
+  margin-top: 80px;
+  gap:80px;
+}
+
+.tools-icon{
+  height: 64px;
+  width: 64px;
+  border: 1px solid rgb(226, 222, 222);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.tools-card{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1100px;
+}
+
+.tools-bottom {
+  position: relative;
+  margin-top: -40px; 
+}
+
+.tools-card .desktop{
+  width: 1100px;
+  height: 640px;
+}
+
+.tools-icon:hover{
+  border: 2px solid #FB923C;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+
+  .tools-section {
+    padding: 60px 40px;
+  }
+
+  .tools-section1 {
+    gap: 40px;
+  }
+
+  .tools-header h1 {
+    font-size: 40px;
+  }
+
+  .tools-header p {
+    font-size: 18px;
+  }
+
+  .tools-card .desktop {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+  }
+
+  .tools-icons-head {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .lines {
+    width: 800px;
+  }
+
+  .blob-left {
+    width: 300px;
+    bottom: 200px;
+  }
+
+  .blob-right {
+    width: 250px;
+    bottom: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .tools-section {
+    padding: 48px 16px;
+  }
+
+  .tools-section1 {
+    gap: 32px;
+  }
+
+  .tools-header h1 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  .tools-header p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .tools-card .desktop {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .lines {
+   display: none;
+  }
+
+  .tools-icons-head {
+    gap: 16px;
+    overflow-x: hidden;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+
+ 
+
+  .tools-icon {
+    min-width: 64px;
+    height: 64px;
+  }
+
+  .blob-left,
+  .blob-right {
+    display: none;
+  }
+}
