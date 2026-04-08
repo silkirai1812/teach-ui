@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="hero-container d-flex align-items-center gap-5">
                 <div className="hero-left d-flex flex-column ">
                     <div className='hero-left1 d-flex flex-column justify-content-center'>
-                        <h1>Teach students worldwide</h1>
+                        <h1><span className="highlight">Teach</span> students worldwide</h1>
                         <p>
                             Amet nunc diam orci duis ut sit diam arcu, nec. <br />
                             Eleifend proin massa tincidunt viverra lectus pulvinar.<br />
@@ -23,9 +23,9 @@ export default function Hero() {
                             </span>
                         </div>
                     </div>
-                    <div className='hero-left3 d-flex align-items-center'>
+                    <div className='hero-left3 d-flex '>
                         <span className="trusted-text">
-                            Trusted by <br /> leading companies
+                            Trusted by leading companies
                         </span>
                         <div className="trusted-logos d-flex align-items-center">
                             <img src="/images/logo1.png" alt="" />

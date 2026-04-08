@@ -6,7 +6,7 @@ export default function AppShowcase() {
       <img src="/images/appblob.png" className="app-blob" alt="" />
 
       <div className="app-left">
-        <h2>An all-in-one app that makes it easier</h2>
+        <h2>An <span className="highlight">all-in-one</span> app that makes it easier</h2>
 
         <ul>
           <li>Est et in pharetra magna adipiscing ornare aliquam.</li>
