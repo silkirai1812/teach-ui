@@ -57,7 +57,7 @@
 
 .testimonial-card {
   flex: 0 0 auto;           
-  width: 420px;              
+  width: 410px;              
   scroll-snap-align: start;
   padding: 32px;
   border-radius: 20px;
