@@ -1,12 +1,18 @@
+import Image from "next/image";
 import "../styles/cta.css";
 
 export default function CTA() {
   return (
-
     <section className="cta-section">
+
       <picture className="cta-bg left">
         <source media="(max-width: 768px)" srcSet="/images/users-mobile-top.png" />
-        <img src="/images/users1.png" alt="top design" />
+        <Image 
+          src="/images/users1.png" 
+          alt="users illustration top"
+          width={760}
+          height={600}
+        />
       </picture>
 
       <div className="d-flex flex-column cta-content">
@@ -17,12 +23,17 @@ export default function CTA() {
           Risus elit et fringilla habitant ut facilisi.
         </p>
 
-        <button>Sign Up Now</button>
+        <button type="button">Sign Up Now</button>
       </div>
 
       <picture className="cta-bg right">
         <source media="(max-width: 768px)" srcSet="/images/users-mobile-bottom.png" />
-        <img src="/images/users2.png" alt="bottom design" />
+        <Image 
+          src="/images/users2.png" 
+          alt="users illustration bottom"
+          width={600}
+          height={600}
+        />
       </picture>
 
     </section>

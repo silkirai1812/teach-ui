@@ -1,19 +1,18 @@
 .footer {
-  background: #0F172A;
+  background: var(--color-bg-dark);
   color: white;
-  padding: 0px 80px;
+  padding: 0 var(--space-lg);
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 48px;
-  padding: 48px 0px
+  padding: 48px 0;
 }
 
 .logo-col span {
   font-weight: 700;
-  font-style: bold;
   font-size: 32px;
   line-height: 110%;
 }
@@ -21,33 +20,28 @@
 .footer-col {
   display: flex;
   flex-direction: column;
-  
 }
 
 .footer-col h4 {
-  font-size: 16px;
+  font-size: var(--text-sm);
   font-weight: 500;
   line-height: 110%;
-  color: #E2E8F0;
-  gap: 8px;
-  padding: 12px 0px;
+  color: #E2E8F0; 
+  padding: 12px 0;
 }
 
 .footer-col a {
-  font-size: 16px;
+  font-size: var(--text-sm);
   color: #E2E8F0;
-  text-decoration: none;
   cursor: pointer;
-  gap: 8px;
-  padding: 12px 0px;
+  padding: 12px 0;
 }
-
 
 .badge {
   background: #F3E8FF;
   color: #6B21A8;
   font-size: 12px;
-  padding:  6px;
+  padding: 6px;
   border-radius: 4px;
   margin-left: 6px;
 }
@@ -62,15 +56,15 @@
 }
 
 .footer-bottom {
-  padding: 24px;
-  gap: 48px;
+  padding: var(--space-sm);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 48px;
 }
 
 .footer-bottom p {
-  font-size: 16px;
+  font-size: var(--text-sm);
   line-height: 140%;
   color: #E2E8F0;
 }
@@ -81,12 +75,12 @@
 }
 
 .footer-links a {
-  font-size: 16px;
+  font-size: var(--text-sm);
   color: #E2E8F0;
 }
 
-.footer-links FontAwesomeIcon {
-  gap: 2px;
+a{
+  text-decoration: none;
 }
 
 @media (max-width: 1024px) {
@@ -110,7 +104,7 @@
   }
 
   .logo-col {
-    margin-bottom: 16px;
+    margin-bottom: var(--space-sm);
   }
 
   .logo-col span {
@@ -130,13 +124,13 @@
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: var(--space-sm);
     padding: 24px 0;
   }
 
   .footer-links {
     flex-wrap: wrap;
-    gap: 16px;
+    gap: var(--space-sm);
   }
 
 }

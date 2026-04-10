@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "../styles/features.css";
 
 export default function Features() {
@@ -5,6 +6,7 @@ export default function Features() {
     <section className="features-section">
 
       <div className="features-container">
+
         <div className="features-left">
           <h2>All the cool <span>features</span></h2>
 
@@ -14,28 +16,57 @@ export default function Features() {
 
           <a href="#">View all the features →</a>
         </div>
+
         <div className="features-right">
-
           <div className="visual">
-            <img src="/images/appblob.png" className="feature-blob" />
-
+            <Image
+              src="/images/appblob.png"
+              alt="background shape"
+              width={500}
+              height={500}
+              className="feature-blob"
+            />
             <div className="feature-card">
               <span className="tag">Popular</span>
               <h4>Design for how people think</h4>
               <p>Aliquam ut euismod condimentum elementum ultricies volutpat sit non.</p>
-              <button>Take Lesson</button>
+              <button type="button">Take Lesson</button>
             </div>
+            <Image
+              src="/images/feature1.png"
+              alt="feature preview"
+              width={200}
+              height={200}
+              className="img img-top"
+            />
 
-            <img src="/images/feature1.png" className="img img-top" />
             <div className="image-bottom">
-              <img src="/images/feature3.png" className="img img-bottom-left" />
-              <img src="/images/feature4.png" className="img img-bottom-right" />
+              <Image
+                src="/images/feature3.png"
+                alt="feature preview"
+                width={300}
+                height={200}
+                className="img img-bottom-left"
+              />
+              <Image
+                src="/images/feature4.png"
+                alt="feature preview"
+                width={232}
+                height={180}
+                className="img img-bottom-right"
+              />
             </div>
-
-            <img src="/images/feature2.png" className="avatar" />
+            <Image
+              src="/images/feature2.png"
+              alt="user avatar"
+              width={90}
+              height={100}
+              className="avatar"
+            />
 
           </div>
         </div>
+
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import "../styles/navbar.css";
 
 export default function Navbar() {
@@ -11,7 +12,7 @@ export default function Navbar() {
       <div className="navbar-left d-flex">
         <div className="d-flex align-items-center gap-1">
           <span className="logo">
-            <img src="/images/logo.png" alt="logo" />
+            <Image src="/images/logo.png" alt="uteach logo" width={32} height={32} />
           </span>
           <h4 className="mb-0">teach</h4>
         </div>

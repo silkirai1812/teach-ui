@@ -1,10 +1,11 @@
 import "../styles/tools.css";
+import Image from "next/image";
 
 export default function Tools() {
   return (
     <section className="tools-section">
-        <img src="/images/bg1.png" className="blob blob-left" />
-        <img src="/images/bg2.png" className="blob blob-right" />
+        <Image src="/images/bg1.png" alt="background shape" width={500} height={500} className="blob blob-left" />
+      <Image src="/images/bg2.png" alt="background shape" width={350} height={350} className="blob blob-right" />
 
         <div className="tools-section1">
       <div className="tools-header d-flex flex-column align-items-center text-center">
@@ -24,33 +25,16 @@ export default function Tools() {
 
   <img src="/images/Lines.png" alt="lines" className="lines" />
       <div className="tools-icons-head d-flex align-items-center justify-content-center">
-        <div className="tools-icon">
-          <img src="/images/icon1.png" alt="" />
-        </div>
-        <div className="tools-icon">
-          <img src="/images/icon2.png" alt="" />
-        </div>
-        <div className="tools-icon">
-          <img src="/images/icon3.png" alt="" />
-        </div>
-        <div className="tools-icon">
-          <img src="/images/icon4.png" alt="" />
-        </div>
-        <div className="tools-icon">
-          <img src="/images/icon5.png" alt="" />
-        </div>
-        <div className="tools-icon">
-          <img src="/images/icon6.png" alt="" />
-        </div>
-        <div className="tools-icon">
-          <img src="/images/icon7.png" alt="" />
-        </div>
-        <div className="tools-icon">
-          <img src="/images/icon8.png" alt="" />
-        </div>
-        <div className="tools-icon">
-          <img src="/images/icon9.png" alt="" />
-        </div>
+        {[1,2,3,4,5,6,7,8,9].map((i) => (
+            <div className="tools-icon" key={i}>
+              <Image 
+                src={`/images/icon${i}.png`} 
+                alt={`tool ${i}`}
+                width={32}
+                height={32}
+              />
+            </div>
+          ))}
       </div>
       </div>
 

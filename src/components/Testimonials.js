@@ -1,5 +1,6 @@
 "use client";
 import { useRef } from "react";
+import Image from "next/image";
 import "../styles/testimonials.css";
 
 export default function Testimonials() {
@@ -36,7 +37,7 @@ export default function Testimonials() {
         <div className="testimonial-card">
           <p>Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus consectetur mi.</p>
           <div className="user">
-            <img src="/images/user1.png" />
+            <Image src="/images/user1.png" alt="Hellen Jummy" width={64} height={64} />
             <div>
               <h4>Hellen Jummy</h4>
               <span>Financial Counselor</span>
@@ -47,7 +48,7 @@ export default function Testimonials() {
         <div className="testimonial-card">
           <p>Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies dolor.</p>
           <div className="user">
-            <img src="/images/user2.png" />
+            <Image src="/images/user2.png" alt="Ralph Edwards" width={64} height={64} />
             <div>
               <h4>Ralph Edwards</h4>
               <span>Math Teacher</span>
@@ -58,7 +59,7 @@ export default function Testimonials() {
         <div className="testimonial-card">
           <p>Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus, amet, hac imperdiet. Tellus mi volutpat tellus, congue malesuada sit nisl donec a.</p>
           <div className="user">
-            <img src="/images/user3.png" />
+            <Image src="/images/user3.png" alt="Hellena John" width={64} height={64} />
             <div>
               <h4>Hellena John</h4>
               <span>Psychology Student</span>
@@ -69,7 +70,7 @@ export default function Testimonials() {
         <div className="testimonial-card">
           <p>Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus consectetur mi.</p>
           <div className="user">
-            <img src="/images/user1.png" />
+            <Image src="/images/user1.png" alt="John Doe" width={64} height={64} />
             <div>
               <h4>John Doe</h4>
               <span>Student</span>
@@ -80,7 +81,7 @@ export default function Testimonials() {
         <div className="testimonial-card">
           <p>Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies dolor.</p>
           <div className="user">
-            <img src="/images/user2.png" />
+            <Image src="/images/user2.png" alt="John Doe" width={64} height={64} />
             <div>
               <h4>John Doe</h4>
               <span>Student</span>

@@ -1,16 +1,16 @@
 .tools-section{
-  padding: 80px; 
+  padding: var(--space-lg); 
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  background-color: #F1F5F9;
+  background-color: var(--color-bg-light);
 }
 
 .tools-section1{
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: var(--space-lg);
 }
 
 .blob {
@@ -21,12 +21,14 @@
 .blob-left {
   bottom: 350px;
   left: 60px;      
-  width: 500px;     
+  max-width: 100%;
+  height: auto;    
 }
 
 .blob-right {
   right: -10px;    
-  width: 350px; 
+  max-width: 100%;
+  height: auto;   
   bottom: 300px;    
 }
 
@@ -36,60 +38,55 @@
 }
 
 .tools-header{
-  gap: 32px;
-}
-
-.highlight {
-  position: relative;
-  display: inline-block;
-}
-
-.highlight::after {
-  content: "";
-  position: absolute;
-  left: 5%;             
-  bottom: 1px;         
-  width: 100%;         
-  height: 10px;       
-  background: #FB923C;
-  border-radius: 999px; 
-  z-index: -1;
+  gap: var(--space-md);
 }
 
 .tools-header h1{
-  font-size: 56px;
+  font-size: var(--text-lg);
   font-weight: 800;
-  font-style: extra-bold;
   line-height: 110%;
-  color: #0F172A;
+  color: var(--color-text);
 }   
 
 .tools-header p{
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--text-md);
   line-height: 180%;
+  color: var(--color-text);
 }
 
 .tools-icons-head{
-  margin-top: 80px;
-  gap:80px;
+  margin-top: var(--space-lg);
+  gap: var(--space-lg);
 }
 
 .tools-icon{
   height: 64px;
   width: 64px;
-  border: 1px solid rgb(226, 222, 222);
-  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-    
+}
+
+.tools-icon:hover{
+  border: 2px solid var(--color-accent);
+  cursor: pointer;
+}
+
+.tools-icon img {
+  display: block;
 }
 
 .tools-card{
   display: flex;
   justify-content: center;
   position: relative;
+}
+
+.tools-card .desktop{
+  max-width: 100%;
+  height: auto;
 }
 
 .lines {
@@ -105,16 +102,6 @@
   margin-top: -40px; 
 }
 
-.tools-card .desktop{
-  width: 1100px;
-  height: 640px;
-}
-
-.tools-icon:hover{
-  border: 2px solid #FB923C;
-  cursor: pointer;
-}
-
 @media (max-width: 1024px) {
 
   .tools-section {
@@ -122,7 +109,7 @@
   }
 
   .tools-section1 {
-    gap: 40px;
+    gap: var(--space-md);
   }
 
   .tools-header h1 {
@@ -135,12 +122,11 @@
 
   .tools-card .desktop {
     width: 100%;
-    height: auto;
     max-width: 700px;
   }
 
   .tools-icons-head {
-    gap: 40px;
+    gap: var(--space-md);
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -167,7 +153,7 @@
   }
 
   .tools-section1 {
-    gap: 32px;
+    gap: var(--space-md);
   }
 
   .tools-header h1 {
@@ -176,29 +162,25 @@
   }
 
   .tools-header p {
-    font-size: 16px;
+    font-size: var(--text-sm);
     line-height: 150%;
   }
 
   .tools-card .desktop {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 16px;
+    border-radius: var(--radius-md);
   }
 
   .lines {
-   display: none;
+    display: none;
   }
 
   .tools-icons-head {
-    gap: 16px;
+    gap: var(--space-sm);
     overflow-x: hidden;
     justify-content: flex-start;
     padding-bottom: 10px;
   }
-
- 
 
   .tools-icon {
     min-width: 64px;
